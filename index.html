@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Pembayaran SMP Swasta Betesda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Pembayaran Siswa SMP Swasta Betesda</h1>
+        <form id="paymentForm">
+            <label for="studentName">Nama Siswa:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="paymentType">Jenis Pembayaran:</label>
+            <select id="paymentType" required>
+                <option value="Uang Sekolah">Uang Sekolah</option>
+                <option value="Buku Paket">Buku Paket</option>
+                <option value="Uang Pembangunan">Uang Pembangunan</option>
+                <option value="Seragam Sekolah">Seragam Sekolah</option>
+            </select>
+
+            <label for="amount">Jumlah Pembayaran:</label>
+            <input type="number" id="amount" required>
+
+            <button type="submit">Kirim Pembayaran</button>
+        </form>
+
+        <h2>Daftar Pembayaran</h2>
+        <table id="paymentTable">
+            <thead>
+                <tr>
+                    <th>Nama Siswa</th>
+                    <th>Jenis Pembayaran</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data Pembayaran akan ditambahkan di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
